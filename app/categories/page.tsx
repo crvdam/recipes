@@ -13,10 +13,10 @@ export default async function Categories() {
         <ul className={styles.category_list} >
           {categories.categories.map((category) => (
             <li className={styles.list_item} key={category.idCategory}>
-                <Link href="/">
+                <Link href={`/categories/${category.strCategory}`}>
                   <Image src={category.strCategoryThumb}
                     alt={category.strCategory + " category"} 
-                    width={300}
+                    width={320}
                     height={200}
                     loading="eager"
                     className="">
