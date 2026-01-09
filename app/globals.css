@@ -2,6 +2,7 @@
   --background_primary: #0a0a0a;
   --background_secondary: #15161b;
   --background_tertiary: #2c2d35;
+  --background_body: #000000;
   --color_primary: #ededed;
   --border-radius: 10px;
 }
@@ -11,6 +12,7 @@
     --background_primary: #0a0a0a;
     --background_secondary: #15161b;
     --background_tertiary: #2c2d35;
+    --background_body: #000000;
     --color_primary: #ededed;
   }
 }
@@ -20,6 +22,7 @@
     --background_primary: #0a0a0a;
     --background_secondary: #15161b;
     --background_tertiary: #15161b;
+    --background_body: #000000;
     --color_primary: #ededed;
   }
 }
