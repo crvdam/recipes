@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import styles from "./layout.module.css";
-import Header from "@/app/components/header/header";
-import Footer from "@/app/components/footer/footer";
+import Header from "@/app/components/Header/Header";
+import Footer from "@/app/components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "Recipes",
@@ -17,11 +17,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={styles.body}>
-       <Header />
-       
-       <div className={styles.site_content}>
-        {children}
-       </div>
+        <Header />
+
+        <div className={styles.site_content}>{children}</div>
 
         <Footer />
       </body>

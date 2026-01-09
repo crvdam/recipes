@@ -1,0 +1,16 @@
+.tile {
+  width: 300px;
+  height: 200px;
+  background-color: var(--background_tertiary);
+  border-radius: var(--border-radius);
+  position: relative;
+}
+
+.image {
+  border-radius: var(--border-radius);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

@@ -17,7 +17,7 @@ export async function getCategories() {
   }
 }
 
-export async function getCategory(strCategory) {
+export async function getMealsInCategory(strCategory) {
   const url = `https://www.themealdb.com/api/json/v1/1/filter.php?c=${strCategory}`;
 
   try {
