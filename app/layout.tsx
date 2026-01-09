@@ -8,8 +8,6 @@ export const metadata: Metadata = {
   description: "Recipes",
 };
 
-
-
 export default function RootLayout({
   children,
 }: Readonly<{

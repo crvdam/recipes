@@ -11,6 +11,7 @@ export default async function Category({ params }) {
   return (
     <div >
       <main>
+          <h1 className={styles.header}>{category}</h1>
           <ul className={styles.category_list}>
             {data.meals.map((meal) => (
               <li key={meal.idMeal} className={styles.list_item}>
@@ -20,7 +21,7 @@ export default async function Category({ params }) {
                     width={320}
                     height={200}
                     loading="eager"
-                    className="">
+                    className={styles.meal_image}>
                   </Image>
 
                 {category.strCategory}

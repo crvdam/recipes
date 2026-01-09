@@ -15,7 +15,7 @@ export default function Header() {
 
       <header className={styles.header}>
         <div className={styles.nav_wrapper}>
-          <Link href="/">
+          <Link href="/" className={styles.logo_wrapper}>
             <Image src={HeaderImage} 
               alt="Welcome to Recipes" 
               width={1536}
