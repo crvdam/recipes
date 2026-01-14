@@ -32,8 +32,10 @@ export default function Tile({
           className={styles.image}
         ></Image>
       </Link>
-      <div className={styles.title}>{name}</div>
-      <div className={styles.description}>{description}</div>
+      <div className={styles.text_wrapper}>
+        <h3 className={styles.title}>{name}</h3>
+        <div className={styles.description}>{description}</div>
+      </div>
     </li>
   );
 }

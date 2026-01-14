@@ -1,0 +1,33 @@
+.featured_item_wrapper {
+  display: flex;
+  background-color: var(--background_tertiary);
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  transition: 0.2s;
+  border-bottom: 2px solid var(--color_border);
+}
+
+.featured_item_wrapper:hover {
+  background-color: var(--background_tertiary_hover);
+  transition: 0.2s;
+}
+
+.featured_item_left {
+  width: 40%;
+}
+
+.featured_item_right {
+  width: 60%;
+  padding: 2rem;
+}
+
+.image {
+  border-radius: var(--border-radius);
+  object-fit: contain;
+  height: auto;
+}
+
+.info_wrapper {
+  width: 60%;
+}
