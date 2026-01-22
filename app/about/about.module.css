@@ -1,0 +1,27 @@
+.list {
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.header {
+  text-align: center;
+}
+
+.main {
+  padding: 2rem;
+}
+
+.themealdb_image {
+  width: 200px;
+}
+
+.mealDb_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+}
