@@ -12,8 +12,8 @@ export async function getCategories() {
 
 
   } catch (error) {
-     error instanceof Error ? error.message : "Unknown error"
-
+    error instanceof Error ? error.message : "Unknown error"
+    console.error(error)
   }
 }
 
@@ -31,9 +31,27 @@ export async function getMealsInCategory(strCategory) {
 
 
   } catch (error) {
-     error instanceof Error ? error.message : "Unknown error"
-
+    error instanceof Error ? error.message : "Unknown error"
+    console.error(error)
   }
 }
 
+export async function getRandomMeal() {
+  const url = `https://www.themealdb.com/api/json/v1/1/random.php`;
+
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+    const data = await response.json();
+    console.log(data);
+    return data;
+
+
+  } catch (error) {
+    error instanceof Error ? error.message : "Unknown error"
+    console.error(error)
+  }
+}
 

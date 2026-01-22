@@ -10,6 +10,7 @@
   --tile_shadow: #000000;
   --color_border: #000000;
   --color_primary: #040404;
+  --color_secondary: #585858;
   --color_hover: #ffa200;
   --tile_border_radius: 0;
 }
@@ -43,7 +44,7 @@ h1 {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 1rem;
@@ -51,6 +52,18 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+h4 {
+}
+
+h5 {
+  margin-top: 0.5rem;
+}
+
+p {
+  margin: 0.5rem 0;
 }
 
 ul {
@@ -87,5 +100,21 @@ a {
 
   &:visited {
     color: inherit;
+  }
+}
+
+.button_primary {
+  font-size: inherit;
+  font: inherit;
+  outline: none;
+  border: none;
+  background: var(--background_tertiary);
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--background_tertiary_hover);
+    transition: 0.2s;
   }
 }
