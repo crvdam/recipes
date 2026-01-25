@@ -1,6 +1,6 @@
 .main {
   padding-bottom: 2rem;
-  padding-right: 2rem;
+  padding-top: 2rem;
 }
 
 .hero {
@@ -23,7 +23,7 @@
   padding-left: 1rem;
 }
 
-.featured_recipe_super_title {
+.super_title_big {
   color: var(--color_secondary);
 }
 
@@ -48,7 +48,7 @@
   object-fit: cover;
 }
 
-.latest_super_title {
+.super_title_small {
   font-size: 0.8rem;
   color: var(--color_secondary);
 }
@@ -85,4 +85,35 @@
   width: 350px;
   padding: 1rem;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.trending_container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.trending_wrapper {
+  max-width: var(--content_max_width);
+  margin: auto;
+}
+
+.trending_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 2rem;
+}
+
+.trending_item {
+  min-width: 500px;
+  display: flex;
+
+  img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.trending_item_info {
+  padding: 1rem;
 }

@@ -24,9 +24,7 @@ export default async function Home() {
               className={styles.featured_recipe_image}
             ></Image>
             <div className={styles.featured_recipe_info_wrapper}>
-              <p className={styles.featured_recipe_super_title}>
-                FEATURED MEAL
-              </p>
+              <p className={styles.super_title_big}>FEATURED MEAL</p>
               <h3>{randomMeals[0].meals[0].strMeal}</h3>
               <button className={styles.button_to_recipe + " button_primary"}>
                 To recipe
@@ -48,10 +46,10 @@ export default async function Home() {
                     className={styles.latest_recipe_image}
                   ></Image>
                   <div>
-                    <span className={styles.latest_super_title}>
+                    <span className={styles.super_title_small}>
                       {meal.meals[0].strCategory} |{" "}
                     </span>
-                    <span className={styles.latest_super_title}>
+                    <span className={styles.super_title_small}>
                       {meal.meals[0].strArea}
                     </span>
                     <h5>{meal.meals[0].strMeal}</h5>
@@ -65,6 +63,70 @@ export default async function Home() {
           </section>
         </div>
 
+        <section className={styles.trending_container}>
+          <div className={styles.trending_wrapper}>
+            <h3>Trending Now</h3>
+            <div className={styles.trending_list}>
+              <div className={styles.trending_item}>
+                <Image
+                  src={randomMeals[0].meals[0].strMealThumb}
+                  alt={randomMeals[0].meals[0].strMeal}
+                  width={180}
+                  height={180}
+                  loading="lazy"
+                  className={styles.trending_item_image}
+                ></Image>
+                <div className={styles.trending_item_info}>
+                  <p className={styles.super_title_small}>Super Text</p>
+                  <h3>Trending description text</h3>
+                </div>
+              </div>
+              <div className={styles.trending_item}>
+                <Image
+                  src={randomMeals[0].meals[0].strMealThumb}
+                  alt={randomMeals[0].meals[0].strMeal}
+                  width={180}
+                  height={180}
+                  loading="lazy"
+                  className={styles.trending_item_image}
+                ></Image>
+                <div className={styles.trending_item_info}>
+                  <p className={styles.super_title_small}>Super Text</p>
+                  <h3>Trending description text</h3>
+                </div>
+              </div>
+              <div className={styles.trending_item}>
+                <Image
+                  src={randomMeals[0].meals[0].strMealThumb}
+                  alt={randomMeals[0].meals[0].strMeal}
+                  width={180}
+                  height={180}
+                  loading="lazy"
+                  className={styles.trending_item_image}
+                ></Image>
+                <div className={styles.trending_item_info}>
+                  <p className={styles.super_title_small}>Super Text</p>
+                  <h3>Trending description text</h3>
+                </div>
+              </div>
+              <div className={styles.trending_item}>
+                <Image
+                  src={randomMeals[0].meals[0].strMealThumb}
+                  alt={randomMeals[0].meals[0].strMeal}
+                  width={180}
+                  height={180}
+                  loading="lazy"
+                  className={styles.trending_item_image}
+                ></Image>
+                <div className={styles.trending_item_info}>
+                  <p className={styles.super_title_small}>Super Text</p>
+                  <h3>Trending description text</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className={styles.fullwidth_image_with_textbox}>
           <Image
             src={randomMeals[0].meals[0].strMealThumb}
@@ -75,8 +137,8 @@ export default async function Home() {
             className={styles.fullwidth_image}
           ></Image>
           <div className={styles.text_wrapper}>
-            <p>Boventekst</p>
-            <h4>Titel</h4>
+            <p className={styles.super_title_big}>Super text</p>
+            <h4>Title</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
               excepturi temporibus hic repellat praesentium minus eligendi quia

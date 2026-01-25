@@ -81,7 +81,8 @@
   .nav_wrapper {
     display: flex;
     align-items: center;
-    max-width: 1200px;
+    width: var(--content_max_width);
+    justify-content: space-between;
   }
 
   .nav_wrapper .list {
