@@ -26,7 +26,7 @@ export default function RootLayout({
       <body className={`${styles.body} ${nunitoSans.className}`}>
         <Header />
 
-        <div className={styles.site_content}>{children}</div>
+        <div className="content">{children}</div>
 
         <Footer />
       </body>

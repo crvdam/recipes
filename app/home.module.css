@@ -6,6 +6,9 @@
 .hero {
   display: flex;
   gap: 2rem;
+  max-width: var(--content_max_width);
+  margin: auto;
+  margin-bottom: 2rem;
 }
 
 .featured_recipe {
@@ -56,4 +59,30 @@
 }
 
 .button_to_recipe {
+}
+
+.fullwidth_image_with_textbox {
+  position: relative;
+  height: 360px;
+  width: var(--site_content_width);
+  padding-left: calc(50% - (var(--content_max_width) / 2) + 4rem);
+  padding-top: 6rem;
+}
+
+.fullwidth_image {
+  z-index: -1;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.text_wrapper {
+  background: var(--background_primary);
+  max-height: calc(100% - 8rem);
+  width: 350px;
+  padding: 1rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }

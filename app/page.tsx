@@ -4,14 +4,14 @@ import Link from "next/link";
 import { getRandomMeal } from "./lib/recipesApi";
 
 export default async function Home() {
+  const meal = await getRandomMeal();
   const randomMeals = [];
   for (let i = 0; i < 5; i++) {
-    const meal = await getRandomMeal();
     randomMeals.push(meal);
   }
 
   return (
-    <div>
+    <>
       <main className={styles.main}>
         <div className={styles.hero}>
           <section className={styles.featured_recipe}>
@@ -64,7 +64,27 @@ export default async function Home() {
             </ul>
           </section>
         </div>
+
+        <section className={styles.fullwidth_image_with_textbox}>
+          <Image
+            src={randomMeals[0].meals[0].strMealThumb}
+            alt={randomMeals[0].meals[0].strMeal}
+            width={1920}
+            height={1080}
+            loading="lazy"
+            className={styles.fullwidth_image}
+          ></Image>
+          <div className={styles.text_wrapper}>
+            <p>Boventekst</p>
+            <h4>Titel</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+              excepturi temporibus hic repellat praesentium minus eligendi quia
+              neque, expedita doloremque.
+            </p>
+          </div>
+        </section>
       </main>
-    </div>
+    </>
   );
 }
