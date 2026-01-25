@@ -22,22 +22,24 @@ export default function Tile({
 }: TileProps) {
   return (
     <Link href={linkUrl}>
-      <div className={styles.featured_item_wrapper}>
-        <div key={id} className={styles.featured_item_left}>
-          <Image
-            src={imageUrl}
-            alt={name + " category"}
-            width={320}
-            height={200}
-            loading="lazy"
-            className={styles.image}
-          ></Image>
+      <section className={styles.featured_item_container}>
+        <div className={styles.featured_item_wrapper}>
+          <div key={id} className={styles.featured_item_left}>
+            <Image
+              src={imageUrl}
+              alt={name + " category"}
+              width={320}
+              height={200}
+              loading="lazy"
+              className={styles.image}
+            ></Image>
+          </div>
+          <div className={styles.featured_item_right}>
+            <h2 className={styles.title}>{name}</h2>
+            <div className={styles.description}>{description}</div>
+          </div>
         </div>
-        <div className={styles.featured_item_right}>
-          <h2 className={styles.title}>{name}</h2>
-          <div className={styles.description}>{description}</div>
-        </div>
-      </div>
+      </section>
     </Link>
   );
 }

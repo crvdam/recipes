@@ -1,5 +1,5 @@
 .tile {
-  width: 300px;
+  width: 280px;
   height: 300px;
   background-color: var(--background_tile);
   border-radius: var(--tile_border_radius);
@@ -8,9 +8,9 @@
 }
 
 .tile:hover {
-  box-shadow: 8px 8px var(--tile_shadow);
+  box-shadow: 1px 5px 5px var(--tile_shadow);
   transition: all 0.5s;
-  transform: translateY(-8px) translateX(-8px);
+  transform: translateY(-5px) translateX(1px);
 }
 
 .image {

@@ -14,7 +14,7 @@ export default async function Home() {
     <div>
       <main className={styles.main}>
         <div className={styles.hero}>
-          <div className={styles.featured_recipe}>
+          <section className={styles.featured_recipe}>
             <Image
               src={randomMeals[0].meals[0].strMealThumb}
               alt={randomMeals[0].meals[0].strMeal}
@@ -32,8 +32,9 @@ export default async function Home() {
                 To recipe
               </button>
             </div>
-          </div>
-          <div className={styles.latest_recipes}>
+          </section>
+
+          <section className={styles.latest_recipes}>
             <h3>The Latest</h3>
             <ul className={styles.latest_recipes_list}>
               {randomMeals.slice(1).map((meal, index) => (
@@ -61,8 +62,7 @@ export default async function Home() {
                 See more
               </button>
             </ul>
-          </div>
-          <div></div>
+          </section>
         </div>
       </main>
     </div>

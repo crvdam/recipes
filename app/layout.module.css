@@ -1,14 +1,9 @@
 .site_content {
-  max-width: 1200px;
+  max-width: var(--site_max_width);
   margin: auto;
   background-color: var(--background_primary);
 }
 
 .body {
   background: var(--background_body);
-}
-
-.site_content {
-  /* border-left: 2px solid var(--color_border);
-  border-right: 2px solid var(--color_border); */
 }

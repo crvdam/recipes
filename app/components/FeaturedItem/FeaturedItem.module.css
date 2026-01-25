@@ -1,14 +1,20 @@
+.featured_item_container {
+  width: var(--site_max_width);
+  background-color: var(--background_tertiary);
+}
+
 .featured_item_wrapper {
   display: flex;
-  background-color: var(--background_tertiary);
+  max-width: var(--content_max_width);
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 2rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   transition: 0.2s;
-  border-bottom: 2px solid var(--color_border);
 }
 
-.featured_item_wrapper:hover {
+.featured_item_container:hover {
   background-color: var(--background_tertiary_hover);
   transition: 0.2s;
 }
